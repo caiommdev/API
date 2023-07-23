@@ -4,9 +4,9 @@ using API.Models;
 
 namespace API.Data
 {
-    public class TaskSistemDBContex : DbContext
+    public class TaskSystemDBContex : DbContext
     {
-        public TaskSistemDBContex(DbContextOptions<TaskSistemDBContex> options) : base(options)
+        public TaskSystemDBContex(DbContextOptions<TaskSystemDBContex> options) : base(options)
         {
         }
 
