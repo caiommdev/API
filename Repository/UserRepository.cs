@@ -44,7 +44,7 @@ namespace API.Repository
             userToUpdate.Email = user.Email;
 
             _dbcontex.Users.Update(userToUpdate);
-           _dbcontex.SaveChanges();
+            await _dbcontex.SaveChangesAsync();
         }
 
         public async Task DeleteUser(int id)
@@ -55,7 +55,7 @@ namespace API.Repository
                 throw new Exception("User not found");
 
             _dbcontex.Users.Remove(user);
-            _dbcontex.SaveChanges();
+            await _dbcontex.SaveChangesAsync();
         }
     }
 }
