@@ -15,8 +15,9 @@ namespace API.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UserModel>().ToTable("Users");
-            modelBuilder.Entity<TaskModel>().ToTable("Tasks");
+            //modelBuilder.Entity<UserModel>().ToTable("Users");
+            //modelBuilder.Entity<TaskModel>().ToTable("Tasks");
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
